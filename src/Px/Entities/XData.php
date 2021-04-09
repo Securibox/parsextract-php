@@ -26,7 +26,11 @@
     public static function LoadFromJson($jsonData){
         $obj = new XData();
         $obj->name = $jsonData->name;
-        $obj->value = $jsonData->value;
+        if(Utils::endsWith($obj->name, '.Table')){
+            $obj->value = XDataTable::LoadFromJson($jsonData->value);
+        }else{
+            $obj->value = $jsonData->value;
+        }
         return $obj;
     }
 

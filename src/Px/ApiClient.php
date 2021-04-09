@@ -53,7 +53,6 @@ class ApiClient
         if($response->statusCode() >= 400){
             throw new Exception($response->statusCode());
         }
-        var_dump($jsonData);
         return Entities\ParsingResult::LoadFromJson($jsonData);
     }
 }

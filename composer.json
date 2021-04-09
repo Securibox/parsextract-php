@@ -4,7 +4,7 @@
   "description": "API wrapper for PX-Studio APIs",
   "homepage": "https://github.com/Securibox/cloudagents-php",
   "keywords": ["parsextract","px-studio","parse","securibox","px","sbx"],
-  "version": "0.0.1",
+  "version": "0.0.2",
   "license": "MIT",
   "authors": [
         {
